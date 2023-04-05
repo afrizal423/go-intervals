@@ -15,7 +15,7 @@ import (
 
 func Wheater(c *gin.Context) {
 	// Menjalankan fungsi kirimData setiap 15 detik.
-	for range time.Tick(5 * time.Second) {
+	for range time.Tick(15 * time.Second) {
 		// cuaca()
 		payload := models.Cuaca{
 			Water: float64(rand.Intn(100) + 1),
